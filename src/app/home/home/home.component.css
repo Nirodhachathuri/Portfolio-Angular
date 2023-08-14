@@ -23,9 +23,12 @@ table tr td:nth-child(even){
 section p{
     font-size: 1.2rem;
     text-align: justify;
+    height: 90%;
+    width: 90%;
 }
 section p:not(:first-child){
     margin-top: 1rem;
+    
 }
 
 /* pc */
