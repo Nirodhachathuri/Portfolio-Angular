@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     ['Interest','Reading Books']
   ];
   aboutMe:string[]=[
-    'I am currently working as a Software Engineer at National Intensive Care Surveillance (NICST)'
+    "Experienced Software Engineer with 3 years of hands-on expertise, equipped with technical abilities and a decisive nature necessary for successful job development. Expert in gathering requirements, designing systems, and optimizing code. Focused and adaptable professional with a proven track record of 3 years in software engineering positions, skilled at flexing to various roles to meet company and customer needs."
   ]
   constructor() { }
 

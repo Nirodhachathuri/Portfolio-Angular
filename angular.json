@@ -24,10 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
               "src/custom-theme.scss",
+      
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ 
+            "node_modules/aos/dist/aos.js"
+          ]
           },
           "configurations": {
             "production": {
