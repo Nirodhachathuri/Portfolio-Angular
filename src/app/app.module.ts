@@ -13,7 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MenuComponent } from './menu/menu.component';
-
+import { FooterComponent } from './footer/footer.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { ProjectsComponent } from './projects/projects.component';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,9 @@ import { MenuComponent } from './menu/menu.component';
     AboutComponent,
     BannerComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,8 @@ import { MenuComponent } from './menu/menu.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    FontAwesomeModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

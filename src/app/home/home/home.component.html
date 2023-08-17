@@ -1,19 +1,29 @@
-<div class="container" id="introduction">
-    <h1 class="title">
-        <span>Personal Information</span>
-    </h1>
-    <table>
-        <tbody> 
-            <tr *ngFor="let row of myData">
-                <td *ngFor="let col of row">
-                    {{col}}
+<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class="container" id="introduction">
+        <section>
+            <div class="title">
+                <span>About Me</span>
+            </div>
+            <p *ngFor="let sentence of aboutMe" style="font-size: 14px; color: black; margin-top: 20px;">
+                {{sentence}}
+            </p>
+        </section>
+        <table>
+            
+            <tbody> 
+               <tr>
+                <td colspan="2">
+                    <div class="title">
+                        <span>Basic Information</span>
+                    </div>
                 </td>
-            </tr>
-        </tbody>
-    </table>
-    <section>
-        <p *ngFor="let sentence of aboutMe">
-            {{sentence}}
-        </p>
-    </section>
+               </tr>
+                <tr *ngFor="let row of myData" style="color: black; ">
+                    <td *ngFor="let col of row" style="color: black; margin-top: 80px;">
+                        {{col}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

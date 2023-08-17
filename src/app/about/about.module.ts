@@ -6,6 +6,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
     MatCardModule,
     MatTableModule,
     MatSortModule,
+    FormsModule,
   ]
 })
 export class AboutModule { }
