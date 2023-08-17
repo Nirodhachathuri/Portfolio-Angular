@@ -3159,10 +3159,12 @@ img {
 
 .profile-page .page-header {
   min-height: 550px;
+  overflow-x:hidden;
 }
 
 .profile-page .profile-container {
   color: #FFFFFF;
+  overflow-x:hidden;
 }
 
 .profile-page .photo-container {
@@ -3183,6 +3185,7 @@ img {
 .profile-page .description,
 .profile-page .category {
   text-align: center;
+  overflow-x:hidden;
 }
 
 .profile-page h5.description {
@@ -4872,7 +4875,7 @@ img {
   opacity: 0.0;
   z-index: 99;
 }
-
+header { overflow-x:hidden; }
 .cc-profile-image img {
   position: relative;
   border-radius: 50%;
