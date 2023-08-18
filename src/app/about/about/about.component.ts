@@ -62,7 +62,12 @@ export class AboutComponent implements OnInit {
 
 
   ngOnInit(): void {
-    AOS.init()
+    console.log('aaaaa',this.skillsData)
   }
-
+  getPercentage(){
+    for (let index = 0; index < this.skillsData.length; index++) {
+      const element = this.skillsData.progress;
+      return element
+    }
+  }
 }
