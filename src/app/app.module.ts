@@ -14,9 +14,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
-import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { ProjectsComponent } from './projects/projects.component';
 import {NgxPaginationModule} from 'ngx-pagination'; 
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +35,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    FontAwesomeModule,
     NgxPaginationModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
