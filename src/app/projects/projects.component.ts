@@ -59,6 +59,13 @@ export class ProjectsComponent implements OnInit {
     imgUrl:'/assets/videos/sentimental.mp4',
     technology:'Java, struts, JSP, HTML, CSS, mySQL',
     githurl:"https://github.com/Nirodhachathuri/Web-Application"
+  },{
+    id:5,
+    title: 'Google Analytics',
+    description: 'This study aims to utilize emotion recognition technology to comprehend the emotional response of gamers during significant events in a game. The research team trained a convolutional neural network (CNN) algorithm using the FER2013 dataset to identify player emotions.',
+    imgUrl:'/assets/videos/googleAnalytics.mp4',
+    technology:'Java, struts, JSP, HTML, CSS, mySQL',
+    githurl:"https://github.com/Nirodhachathuri/Web-Application"
   }]
 
 }

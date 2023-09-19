@@ -1,8 +1,4 @@
-.skill-card {
-    max-width: 400px;
-    margin: 5px;
-    /* background-image: url(../../../assets/bg1.jpeg); */
-  }
+
   
   ::ng-deep .example-header-image {
     background-color: rgb(181, 117, 33);
@@ -11,7 +7,7 @@
   .container{
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .container >*{
     flex: 1 1 400px;
