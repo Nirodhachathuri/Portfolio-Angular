@@ -1,29 +1,12 @@
-<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);align-items: center;">
     <div class="container" id="introduction">
         <section>
             <div class="title">
-                <span>About Me</span>
+                <span style="align-items: center;">About Me</span>
             </div>
-            <p *ngFor="let sentence of aboutMe" style="font-size: 14px; color: black; margin-top: 20px;">
+            <p *ngFor="let sentence of aboutMe" style="font-size: 14px; color: black; margin-top: 20px;align-items: center;">
                 {{sentence}}
             </p>
         </section>
-        <table>
-            
-            <tbody> 
-               <tr>
-                <td colspan="2">
-                    <div class="title">
-                        <span>Basic Information</span>
-                    </div>
-                </td>
-               </tr>
-                <tr *ngFor="let row of myData" style="color: black; ">
-                    <td *ngFor="let col of row" style="color: black; margin-top: 80px;">
-                        {{col}}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </div>
