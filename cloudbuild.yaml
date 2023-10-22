@@ -1,14 +1,22 @@
 steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args:
+      - cp
+      - 'gs://checkdataone/cloudbuild.yaml'
+      - cloudbuild.yaml
+
   - name: gcr.io/cloud-builders/docker
     args:
       - build
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
       - .
+
   - name: gcr.io/cloud-builders/docker
     args:
       - push
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
+
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     args:
       - run
@@ -24,6 +32,3 @@ steps:
 timeout: 1200s
 images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
-options:
-  logging: 'GCS_ONLY'
-  logsBucket: 'gs://checkdataone' 
