@@ -28,6 +28,6 @@ images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
 artifacts:
   objects:
-    location: 'gs://your-logs-bucket'  # Specify your custom GCS bucket here
+    location: 'gs://locationdataone'  # Specify your custom GCS bucket here
     paths:
       - 'build-logs/'  # Replace with the desired subdirectory name
