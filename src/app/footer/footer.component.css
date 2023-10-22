@@ -1,10 +1,10 @@
 .footer {
     padding: 24px 0;
-    background-color: #f2f2f2;
+    background-color: #6F00FF;
   }
   
   .footer.footer-default {
-    background-color: #f2f2f2;
+    background-color: #ece9f0;
   }
   
   .footer nav {
@@ -45,15 +45,15 @@
   }
 
   .cc-facebook:hover i {
-    color: #3b5998;
+    color: #eaebef;
   }
   
   .cc-twitter:hover i {
-    color: #1da1f2;
+    color: #e8edf0;
   }
   
   .cc-google-plus:hover i {
-    color: #dd4b39;
+    color: #f2eeed;
   }
   
   .cc-instagram:hover i {

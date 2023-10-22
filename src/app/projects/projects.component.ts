@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
+
 export class ProjectsComponent implements OnInit {
   config: { itemsPerPage: number; currentPage: number; totalItems: any; };
   // projects: void;
   // config: { itemsPerPage: number; currentPage: number; totalItems: any; };
 
-  constructor() { }
+  constructor(private el: ElementRef) { }
   faGithub = faGithub;
   ngOnInit() {
     console.log(this.projects)
@@ -26,6 +27,7 @@ export class ProjectsComponent implements OnInit {
   pageChanged(event: any){
     this.config.currentPage = event;
   }
+  
  
    projects: any=[{
       id:1,
@@ -68,4 +70,5 @@ export class ProjectsComponent implements OnInit {
     githurl:"https://github.com/Nirodhachathuri/Web-Application"
   }]
 
+  
 }

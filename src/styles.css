@@ -33,4 +33,11 @@ h1{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/Gilroy\ Font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 

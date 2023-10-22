@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import {NgxPaginationModule} from 'ngx-pagination'; 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { HoverAutoplayDirective } from './projects/hover-autoplay.directive';
+import { ExperienceComponent } from './experience/experience/experience.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     ContactComponent,
     HomeComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    HoverAutoplayDirective,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
