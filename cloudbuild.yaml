@@ -1,3 +1,6 @@
+options:
+  logging: 'NONE'
+
 steps:
   - name: gcr.io/cloud-builders/docker
     args:
@@ -5,9 +8,6 @@ steps:
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
       - .
-    options:
-      logging: 'NONE'
-      # logsBucket: 'gs://locationdataone'  # Specify your custom GCS bucket here
 
   - name: gcr.io/cloud-builders/docker
     args:
@@ -29,9 +29,3 @@ steps:
 timeout: 1200s
 images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
-
-# artifacts:
-#   objects:
-#     location: 'gs://locationdataone'  # Specify your custom GCS bucket here
-#     paths:
-#       - 'build-log/'  # Replace with the desired subdirectory name
