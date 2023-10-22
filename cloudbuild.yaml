@@ -34,4 +34,4 @@ images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
 options:
   logging: 'CLOUD_LOGGING_ONLY'
-  logsBucket: 'gs://checkdataone' 
+  logsBucket: 'gs://locationdataone' 
