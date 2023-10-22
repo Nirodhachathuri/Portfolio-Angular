@@ -1,15 +1,10 @@
-
-  
-  ::ng-deep .example-header-image {
-    background-color: rgb(181, 117, 33);
-    background-size: cover;
-  }
-  .container{
-    flex-wrap: wrap;
+/* CSS for positioning the second card on the right side */
+.row {
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: wrap;
   }
-  .container >*{
-    flex: 1 1 400px;
+  
+  .col-md-6 {
+    flex: 0 0 50%; /* Set the width of each column to 50% of the container width */
   }
- 
+  

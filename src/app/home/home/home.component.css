@@ -7,29 +7,14 @@
     display: grid;
     border: none;
     overflow-x:hidden;
+    margin-right: 400px;
 }
-table{
-    font-size: 1.3 rem;
-}
-table tr{
-    height: 40px;
-}
-table tr td{
-    padding-left: 0.5rem;
-}
-table tr td:nth-child(even){
-    color: var(--green);
-}
+
 section p{
     font-size: 1.2rem;
     text-align: justify;
     height: 100%;
 }
-section p:not(:first-child){
-    margin-top: 1rem;
-    
-}
-
 /* pc */
 
 
@@ -58,18 +43,20 @@ section p:not(:first-child){
     overflow-x:hidden;
     border: 0;
     border-radius: 0.1875rem;
-    background-color: rgb(43, 100, 129);
+    background-color: transparent;
     display: inline-block;
     position: relative;
     overflow: hidden;
     width: 60%;
-    height: 280px;
-    margin-bottom: 20px;
+    height: 700px;
+    margin-bottom: -40px;
     margin-left: 280px;
     font-size: 14px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+
+            margin-top: 1em;
   }
   
   .card .card-body {
@@ -82,4 +69,21 @@ section p:not(:first-child){
     margin-left: 280px;
     font-size: 22px;
     margin-top: 20px;
+  }
+  #hidden-audio {
+    display: none;
+  }
+#hidden-audio::-webkit-media-controls-panel,
+#hidden-audio::-webkit-media-controls {
+  display: none !important;
+}
+.button{
+    position:relative; 
+    /* top: 20%; */
+    left: 3%;
+    text-align: center;
+    padding: 0 15px;
+    color: #6F00FF;
+    width: 100%;
+    max-width: 880px;
   }
