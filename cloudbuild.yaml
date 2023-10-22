@@ -1,3 +1,6 @@
+options:
+  logging: 'CLOUD_LOGGING_ONLY'
+
 steps:
   - name: gcr.io/cloud-builders/docker
     args:
@@ -5,8 +8,6 @@ steps:
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
       - .
-    options:
-      logging: CLOUD_LOGGING_ONLY
 
   - name: gcr.io/cloud-builders/docker
     args:
@@ -28,8 +29,3 @@ steps:
 timeout: 1200s
 images:
   - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
-# artifacts:
-#   objects:
-#     location: 'gs://your-logs-bucket'  # Specify your custom GCS bucket here
-#     paths:
-#       - 'your-build-logs'  # Replace with the path to store build logs
