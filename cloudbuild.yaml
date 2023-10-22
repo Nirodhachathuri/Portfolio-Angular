@@ -5,9 +5,8 @@ steps:
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
       - .
-    logsBucket: 'gs://mylogsbucket'
     options:
-      logging: GCS_ONLY
+     defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
   - name: gcr.io/cloud-builders/docker
     args:
